@@ -1,0 +1,25 @@
+settings:
+  rate: 100.00
+  date_format: "%b %d, %Y"
+  currency_format: "$%.02f"
+  due_day: 10 # 10th of the current month
+  invoice_identifier: "INV-%04d"
+  filename: "invoice.pdf"
+
+data:
+  from: |
+    John Smith
+    123 10th Ave
+    Fake City, SK, T2ZABC
+    Fake Country
+  to: |
+    Acme Inc.
+    123 1st St. Suite 001
+    Fake Country
+    12345 AZ
+  extra_info: |
+    <b>Payment information:</b>
+    Account Holder: John Smith
+    Account Number: 1234567
+    Transit number: 0909
+    Branch number: 9898
