@@ -45,6 +45,7 @@ module Presenters
     def_delegators :@config, :to
     def_delegators :@config, :from
     def_delegators :@config, :extra_info
+    def_delegators :@config, :currency_abbreviation
 
     private
 

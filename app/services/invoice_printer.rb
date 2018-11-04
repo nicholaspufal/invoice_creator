@@ -37,7 +37,7 @@ module Services
       @prawn.table([%w[Item HRS/QTY Rate Amount], *rows], row_colors: ["F0F0F0", "FFFFFF"], width: 550)
 
       @prawn.move_down 20
-      @prawn.text "<b>Total (USD) #{@presenter.total}</b>", align: :right, inline_format: true
+      @prawn.text "<b>Total (#{@presenter.currency_abbreviation}) #{@presenter.total}</b>", align: :right, inline_format: true
       @prawn.move_down 20
       @prawn.stroke_horizontal_rule
       @prawn.move_down 20

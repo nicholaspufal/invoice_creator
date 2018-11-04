@@ -1,6 +1,7 @@
 settings:
   rate: 100.00
   date_format: "%b %d, %Y"
+  currency_abbreviation: "USD"
   currency_format: "$%.02f"
   due_day: 10 # 10th of the current month
   invoice_identifier: "INV-%04d"
