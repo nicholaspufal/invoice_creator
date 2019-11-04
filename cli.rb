@@ -7,7 +7,7 @@ require_relative "app/presenters/invoice"
 
 class InvoiceCreator < Thor
   desc "create HOURS [EXPENSES_AMOUNT]", "Generates an invoice for the given amount of HOURS"
-  option :number
+  option :number, required: true
   long_desc <<-LONGDESC
     `./bin/invoice_generator create HOURS` will generate an invoice based on an amount of hours
     of your choosing. Please update `config.yml` with your preferences before
@@ -30,7 +30,7 @@ class InvoiceCreator < Thor
       due_day: ConfigReader.instance.due_day,
       billable_hours: hours.to_i,
       expenses_amount: expenses_amount.to_f,
-      number: options[:number] || 1
+      number: options[:number]
     )
 
     presenter = Presenters::Invoice.new(
