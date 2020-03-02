@@ -28,7 +28,7 @@ class InvoiceCreator < Thor
     invoice = Models::Invoice.new(
       rate: ConfigReader.instance.rate,
       due_day: ConfigReader.instance.due_day,
-      billable_hours: hours.to_i,
+      billable_hours: hours.to_f,
       expenses_amount: expenses_amount.to_f,
       number: options[:number]
     )
