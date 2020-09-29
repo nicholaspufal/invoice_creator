@@ -3,9 +3,8 @@ require "prawn/table"
 
 module Services
   class InvoicePrinter
-    def initialize(presenter:, filename:)
+    def initialize(presenter:)
       @presenter = presenter
-      @filename = filename
       @prawn = Prawn::Document.new
     end
 
@@ -44,7 +43,7 @@ module Services
 
       @prawn.text @presenter.extra_info, inline_format: true
 
-      @prawn.render_file @filename
+      @prawn.render_file @presenter.filename
     end
 
     private
