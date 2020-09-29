@@ -9,6 +9,10 @@ module Presenters
       @config = config
     end
 
+    def filename
+      @invoice.invoice_date.strftime(@config.filename)
+    end
+
     def due_date
       @invoice.due_date.strftime(@config.date_format)
     end

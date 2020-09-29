@@ -5,7 +5,7 @@ settings:
   currency_format: "$%.02f"
   due_day: 10 # 10th of the current month
   invoice_identifier: "INV-%04d"
-  filename: "invoice.pdf"
+  filename: "invoice-%Y-%m-%d.pdf" # absolute or relative path
 
 data:
   from: |

@@ -38,14 +38,11 @@ class InvoiceCreator < Thor
       config: ConfigReader.instance
     )
 
-    Services::InvoicePrinter.new(
-      presenter: presenter,
-      filename: ConfigReader.instance.filename
-    ).print
+    Services::InvoicePrinter.new(presenter: presenter).print
 
     puts <<~MESSAGE
       Invoice created.
-      #{Dir.pwd}/#{ConfigReader.instance.filename}
+      You can find it @ #{presenter.filename}
     MESSAGE
   end
 end
