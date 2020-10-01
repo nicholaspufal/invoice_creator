@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
-require_relative "../cli"
-InvoiceCreator.start(ARGV)
+require "invoice_creator"
+InvoiceCreator::Cli.start(ARGV)
