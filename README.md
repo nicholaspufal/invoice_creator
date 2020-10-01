@@ -1,6 +1,6 @@
 # Invoice Creator
 
-A simple invoice creation tool to help you bill your IT clients.
+A simple invoice creation tool to help you bill your tech clients.
 
 ![Sample Invoice](https://user-images.githubusercontent.com/680151/47966699-92c76200-e03c-11e8-8b22-f4fa3e63ef75.png)
 
