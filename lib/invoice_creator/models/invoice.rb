@@ -1,6 +1,6 @@
 require "date"
 
-module Models
+class InvoiceCreator::Models
   class Invoice
     attr_reader :expenses_amount,
                 :billable_hours,

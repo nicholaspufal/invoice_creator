@@ -6,13 +6,18 @@ A simple invoice creation tool to help you bill your IT clients.
 
 ## Set up
 
-1. Install dependencies with `bundle install`
-2. Edit `config.yml` according to your preferences - define your rate, date format,
-currency format, invoice number mask and what should be part of the to/from/extra
-fields in the invoice.
-3. You might want to `chmod +x bin/invoice_creator`. Optionally just run it with `ruby`.
-4. Run `./bin/invoice_creator help create` for a more comprehensive explanation on
-how to use it
+The codebase has been converted into a Ruby gem so you can just install it with:
+
+```bash
+  gem install invoice_creator
+```
+
+...and the binary should be available to you globally 🎉
+
+Just make sure to go into the gem's folder and edit the file `config.yml` so that it's tailored to
+your needs - define your rate, date format, filename format, etc.
+
+You can do `bundler open invoice_creator` for quick access to the gem's folder.
 
 ## Usage example
 

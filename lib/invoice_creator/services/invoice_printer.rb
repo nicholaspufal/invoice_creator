@@ -1,7 +1,7 @@
 require "prawn"
 require "prawn/table"
 
-module Services
+module InvoiceCreator::Services
   class InvoicePrinter
     def initialize(presenter:)
       @presenter = presenter

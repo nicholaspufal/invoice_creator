@@ -1,6 +1,6 @@
 require "forwardable"
 
-module Presenters
+module InvoiceCreator::Presenters
   class Invoice
     extend Forwardable
 

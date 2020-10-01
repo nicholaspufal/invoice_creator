@@ -2,7 +2,7 @@ require "yaml"
 require "ostruct"
 require "singleton"
 
-class ConfigReader
+class InvoiceCreator::ConfigReader
   include Singleton
 
   def initialize
