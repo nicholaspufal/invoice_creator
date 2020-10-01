@@ -17,7 +17,7 @@ The codebase has been converted into a Ruby gem so you can just install it with:
 Just make sure to go into the gem's folder and edit the file `config.yml` so that it's tailored to
 your needs - define your rate, date format, filename format, etc.
 
-You can do `bundler open invoice_creator` for quick access to the gem's folder.
+You can do `gem open invoice_creator` for quick access to the gem's folder.
 
 ## Usage example
 
