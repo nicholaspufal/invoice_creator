@@ -25,5 +25,5 @@ Let's say we want to create an invoice that represents 168 billable hours and ha
 invoice number set to 10:
 
 ```bash
-./bin/invoice_creator create 168 --number 10
+invoice_creator create 168 --number 10
 ```
