@@ -7,7 +7,7 @@ module InvoiceCreator
     include Singleton
 
     def initialize
-      @yaml = YAML.load_file(File.expand_path('../../../config.yml', __FILE__))
+      @yaml = YAML.load_file(File.expand_path("../../../config.yml", __FILE__))
     end
 
     def settings
