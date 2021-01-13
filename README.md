@@ -27,3 +27,14 @@ invoice number set to 10:
 ```bash
 invoice_creator create 168 --number 10
 ```
+
+Now let's say you want to create the same invoice but also need it to include a row with $150 in reimburseable expenses:
+```bash
+invoice_creator create 168 150 --number 10
+```
+
+For help just run:
+
+```bash
+invoice_creator --help
+```
